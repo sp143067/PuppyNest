@@ -1,0 +1,87 @@
+.puppy-img-block {
+    width: 300px;
+    border-radius: 8px;
+    margin: 8px;
+    border: 1px solid #b3b3b3;
+}
+
+.d-flex {
+    display: flex;
+}
+
+h6 {
+    font-size: 16px;
+    display: inline;
+    font-weight: 600;
+}
+
+.puppy-img-block h6 {
+    font-size: 16px;
+    display: inline;
+    font-family: monospace;
+}
+
+.puppy-img-block img {
+    width: 300px;
+    max-width: 300px;
+    max-height: 200px;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+}
+
+.puppy-img-block span {
+    color: #9a9a9a;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.formField>input.searchFieldRight {
+    padding: 0 36px 0 16px;
+    height: 40px;
+    border-radius: 4px;
+    border: solid 1px #d8dce6;
+    outline: 0;
+    font-size: 16px;
+    line-height: 32px;
+    background-image: url(../../../assets/img/search.svg);
+    background-repeat: no-repeat;
+    background-position: 95%;
+    width: 180px;
+    transition: width 0.4s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out;
+    -ms-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin: 16px 16px 0 16px;
+}
+
+.formField>input:focus.searchFieldRight {
+    width: 240px;
+    -webkit-box-shadow: 0px 5px 8px 0 rgb(91 92 105 / 20%), 0 0 1px 0 rgb(91 92 105 / 30%);
+    -moz-box-shadow: 0px 5px 8px 0 rgba(91, 92, 105, 0.2), 0 0 1px 0 rgba(91, 92, 105, 0.3);
+    box-shadow: 0px 5px 8px 0 rgb(91 92 105 / 20%), 0 0 1px 0 rgb(91 92 105 / 30%);
+    border: solid 1px #66332b;
+    background-color: #fff;
+}
+
+.no-record {
+    width: 200px;
+    height: auto;
+}
+
+.puppy-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: calc(100vh - 128px);
+}
+
+.puppy-name {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #007e00;
+    font-weight: 600;
+    margin: 6px;
+}

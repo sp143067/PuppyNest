@@ -1,0 +1,48 @@
+<ng-template #contentTemplate let-modal style="font-family: Montserrat;">
+    <div class="modal-header" style="background-color: lightblue;">
+        <h4 class="modal-title" id="modal-basic-title">We value your opinion! &nbsp; <i class="fas fa-gavel"></i>
+        </h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body text-center">
+        <h5>Help us improve our product? <strong>Give us your feedback.</strong></h5>
+        <hr>
+        <h6>Your Rating</h6>
+    </div>
+    <div class="modal-body">
+        <form action="" method="post">
+            <div class="form-group">
+                <div class="form-check mb-4">
+                    <input name="feedback" type="radio">
+                    <label class="ml-3">Very Poor</label>
+                </div>
+                <div class="form-check mb-4">
+                    <input name="feedback" type="radio">
+                    <label class="ml-3">Poor</label>
+                </div>
+                <div class="form-check mb-4">
+                    <input name="feedback" type="radio">
+                    <label class="ml-3">Average</label>
+                </div>
+                <div class="form-check mb-4">
+                    <input name="feedback" type="radio">
+                    <label class="ml-3">Good</label>
+                </div>
+                <div class="form-check mb-4">
+                    <input name="feedback" type="radio">
+                    <label class="ml-3">Excellent</label>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="text-center">
+        <h4>What could we improve?</h4>
+    </div> <textarea type="textarea" placeholder="Your Message" rows="3"></textarea> <!-- Modal Footer-->
+    <div class="modal-footer">
+        <a href="" class="btn btn-primary">Send <i class="fa fa-paper-plane"></i> </a>
+        <a href="" class="btn btn-outline-primary" data-dismiss="modal">Cancel</a>
+    </div>
+</ng-template>

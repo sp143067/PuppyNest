@@ -1,0 +1,18 @@
+<div class="container" style="font-family: 'Montserrat';">
+    <div class="form-group shadow-textarea">
+        <label for="exampleFormControlTextarea6">
+            <i class="fab fa-blogger fa-2x"></i>&ensp;Daily-Blog PuppyNest
+        </label>
+        <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3"
+            placeholder="Write something here..." #blogpost></textarea> <br>
+        <div class="post_button" style="text-align: right;">
+            <button type="button" class="btn btn-secondary" (click)="AddBlogPost(blogpost.value)">Post</button>
+        </div>
+        <ul style="list-style-type:none;" *ngFor="let item of bloglist">
+            <li>{{item.name}} &#160;&#160;&#160;&#160;&#160;
+                <button type="button" class="btn btn-danger" (click)="RemoveBlogPost(item.id)"
+                style="font-size: .9rem;border-radius: 1.25rem;">Remove</button>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,137 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.logo-img, .logo-img img {
+    height: 48px;
+    width: auto;
+    box-shadow: 2px 2px 2px 3px green;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    padding: 0 12px;
+
+}
+
+.logo-img a {
+    text-decoration: none;
+    color: green;
+    margin: auto;
+    font-weight: 600;
+}
+
+.header {
+    align-items: center;
+    position: fixed;
+    min-height: 72px;
+    margin: 0;
+    min-width: 100%;
+    z-index: 10;
+    background-color: #000;
+}
+
+header .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    min-height: 72px;
+    width: 100vw;
+    min-width: 100%;
+    z-index: 10;
+    background-color: #000;
+    padding: 0 15px;
+}
+
+header .navigation .menu-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto 50px auto 0px;
+    background: transparent;
+}
+
+header .navigation .menu-list li {
+    position: relative;
+}
+
+header .navigation .menu-list li a {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.5rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: color 1s ease 0s, border 1s ease 0s;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-list>.active::after {
+    content: "";
+    height: 3.5px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #0a8405;
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+}
+
+.body-content {
+    margin-top: 72px;
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(251, 219, 124, 0.4);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+}
+
+.scroll-top img {
+    height: 32px;
+    width: auto;
+}
+
+.scroll-top:hover {
+    background-color: rgba(251, 219, 124, 0.7);
+}
+
+.btn-primary {
+    background-color: #4e9c26;
+    border-color: #4e9c26;
+    border-radius: 19px;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    background-color: #008000 !important;
+    border-color: #008000 !important;
+    border-radius: 19px;
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem #7dad3e !important;
+}
+
+.btn-secondary {
+    border-radius: 19px;
+}
+
+.btn+.btn {
+    margin-left: 8px;
+}
+
+.ff-bold {
+    font-weight: 600;
+}

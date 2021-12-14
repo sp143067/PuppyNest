@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <header class="header_nav">
+    <nav class="navigation navbar fixed-top">
+      <!-- Logo -->
+      <div class="logo-img">
+        <a routerLink="./find-a-puppy">
+          Puppy Nest
+        </a>
+      </div>
+      <!-- Navigation -->
+      <ul class="menu-list">
+        <li routerLink="./find-a-puppy" routerLinkActive="active">
+          <a>Find a Puppy</a>
+        </li>
+        <li routerLink="./puppy-sitter" routerLinkActive="active">
+          <a>Puppy Sitter</a>
+        </li>
+        <li routerLink="./know-your-puppy" routerLinkActive="active">
+          <a>Know Your Puppy</a>
+        </li>
+        <li routerLink="./customers-feedback" routerLinkActive="active">
+          <a>Customer’s Feedback</a>
+        </li>
+        <li routerLink="./customers-blog" routerLinkActive="active">
+          <a>Customer’s Blog</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</div>
+<div class="body-content">
+  <router-outlet></router-outlet>
+</div>
